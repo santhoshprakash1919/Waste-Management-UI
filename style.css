@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.filter-bar {
+  background: #ecf0f1;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+main {
+  display: flex;
+  height: 85vh;
+}
+
+#map {
+  flex: 3;
+  height: 100%;
+  position: relative;
+}
+
+.sidebar {
+  flex: 1;
+  background: white;
+  border-left: 2px solid #ccc;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  color: #2c3e50;
+}
+
+.garbage-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.garbage-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Search box style */
+.leaflet-control-geocoder {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}

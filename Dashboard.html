@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Waste Detection Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet Map CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Leaflet Search Plugin CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Smart Waste Detection Dashboard</h1>
+  </header>
+
+  <div class="filter-bar">
+    <label for="severityFilter">🔍 Filter by Severity: </label>
+    <select id="severityFilter">
+      <option value="All">All</option>
+      <option value="High">High (Red)</option>
+      <option value="Medium">Medium (Yellow)</option>
+      <option value="Low">Low (Green)</option>
+    </select>
+  </div>
+
+  <main>
+    <div id="map"></div>
+    <div class="sidebar">
+      <h2>Detected Garbage Locations</h2>
+      <ul id="garbage-list"></ul>
+    </div>
+  </main>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
