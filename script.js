@@ -4,7 +4,7 @@ const map = L.map('map').setView([13.0827, 80.2707], 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 18,
-});
+}).addTo(map);
 
 
 L.Control.geocoder({ defaultMarkGeocode: true }).addTo(map);
